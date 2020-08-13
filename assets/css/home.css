@@ -1,0 +1,54 @@
+body{
+   margin :0;
+    font-family: sans-serif;
+    text-align: center;
+
+
+}
+#page-heading{
+    text-align: center;
+    margin-top: 25px;
+    color: grey;
+}
+#contact-list-container{
+    background-color:blueviolet
+
+}
+#contact-list-container ul{
+    padding :0;
+    list-style: none;
+}
+.contact{
+    padding: 3px 10px;
+    
+    border :1px solid white;
+    background-color: lightsteelblue;
+    box-shadow: 1px 1px 1px 1px lightcyan;
+    color: white;
+}
+
+.contact .details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+
+}
+ .delete-button{
+    width :10%;
+  text-align: right;
+  margin-top: 2px;
+  padding: 3px;
+  position: relative;
+  left:48%;
+}
+
+.contact p{
+    margin :5px 0;
+}
+
+.contact .delete-button{
+    color: white;
+    background-color: red;
+}
