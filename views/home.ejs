@@ -11,18 +11,17 @@
 </head>
 <body>
 <h1 id = "page-heading">
-    <i class="fas fa-address-book"></i></i> contact list</h1>
+    <i class="fas fa-address-book"></i></i> CONTACT LIST</h1>
     <div id = "contact-list-container">
         <ul>
             <% for (let i of contact_list) { %>
         <li class="contact">
             <div id = "details">
-                    <p>
-                        <%= i.name %>
-
+                    <p style="color: black; font-weight: 5000;"> 
+               NAME:  <%= i.name %>
                     </p>
-                    <p>
-                        <%= i.phone %>
+                    <p style="color: brown;">
+                    PHONE: <%= i.phone %>
                     </p>
             </div>
            <div class = "delete-button">
@@ -38,7 +37,7 @@
     <form id = "new-contact-form" = action = "/create-contact" method = POST>
         <input type = "text" name = "name" placeholder="Enter your name" required>
         <input type = "number" name = "phone" placeholder=" Enter your phone number" required>
-        <button type = "submit">Add contact</button>
+        <button type = "submit" id = "submit">Add contact</button>
     </form>
 
     <script src="https://kit.fontawesome.com/5ae40ea41b.js" crossorigin="anonymous"></script>
