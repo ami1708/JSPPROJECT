@@ -104,28 +104,6 @@ app.get('/delete-contact/', function(req, res){
    
 });
 
-// app.get('/delete-contact',function(req,res){
-//     // console.log(req.query)
-//     // get the id from query in the url
-//     let id  = req.query.id;
-//     // find the contact in the database using id and delete
-
-//     Contact.findByIdAndDelete(id,function(err){
-//         if(err){
-//             console.log("error in finding the contact")
-//             return;
-//         }
-//         return res.redirect('back');
-//     })
-//     // let contactIndex = contactList.findIndex(contact=>contact.phone==phone);
-//     // if (contactIndex!= -1)
-//     // {
-//     //     contactList.splice(contactIndex,1)
-//     // }
-// })
-
-
-
 app.listen(port,function(err){
     if(err){
         console.log("Error in running the  server",err);

@@ -11,7 +11,7 @@
 </head>
 <body>
 <h1 id = "page-heading">
-    <i class="fas fa-address-book"></i></i> CONTACT LIST</h1>
+    <i class="fas fa-address-book"></i></i> CUSTOMER DETAILS</h1>
     <div id = "contact-list-container">
         <ul>
             <% for (let i of contact_list) { %>
@@ -37,10 +37,12 @@
     <form id = "new-contact-form" = action = "/create-contact" method = POST>
         <input type = "text" name = "name" placeholder="Enter your name" required>
         <input type = "number" name = "phone" placeholder=" Enter your phone number" required>
+        <input type = "text" name = "address" placeholder=" Enter your address" required>
+        <input type = "payment mode" name = "Payment mode" placeholder=" Enter your payment mode" required>
         <button type = "submit" id = "submit">Add contact</button>
     </form>
 
-    <script src="https://kit.fontawesome.com/5ae40ea41b.js" crossorigin="anonymous"></script>
+    <script src="https://k           it.fontawesome.com/5ae40ea41b.js" crossorigin="anonymous"></script>
     <script type ="text/javascript" src = "/js/home.js">
     </script>
 </body>
